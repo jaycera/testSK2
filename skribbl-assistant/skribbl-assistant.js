@@ -88,7 +88,7 @@
   const initialize = async () => {
     try {
       wordList = await fetch(
-        'https://api.npoint.io/91ac00bc3d335f00e13f'
+        'https://raw.githubusercontent.com/jaycera/testSK2/main/skribbl-assistant/words_sorted.json'
       ).then((response) => response.json());
     } catch (e) {
       await new Promise((resolve) => setTimeout(resolve, refreshDelay));
